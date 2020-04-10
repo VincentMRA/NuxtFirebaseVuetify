@@ -87,7 +87,7 @@ export default {
           onAuthStateChangedAction: "users/getUserInfo",
         },
         ssr : {
-          credential: '~/assets/serviceAccount.json'
+          credential: '~/serviceAccount.json'
         }
         // ssr: {
         //   // !! NEVER deploy a service account file to github or to a publicly accessible folder on your server !!

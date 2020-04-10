@@ -1,6 +1,6 @@
 import admin from 'firebase-admin'
 
-const options = {"credential":"\u002Fhome\u002Fvincent\u002FProjects\u002Ftes\u002Fsrc\u002Fassets\u002FserviceAccount.json","config":{"apiKey":"AIzaSyALMtZF3WopNjQ-EwaZDKbxDq5Je1fwvXc","authDomain":"mra-vue.firebaseapp.com","databaseURL":"https:\u002F\u002Fmra-vue.firebaseio.com","projectId":"mra-vue","storageBucket":"mra-vue.appspot.com","messagingSenderId":"606160825857","appId":"1:606160825857:web:9e51bfed7565b25b06da00"}}
+const options = {"credential":"\u002Fhome\u002Fvincent\u002FProjects\u002Ftes\u002Fsrc\u002FserviceAccount.json","config":{"apiKey":"AIzaSyALMtZF3WopNjQ-EwaZDKbxDq5Je1fwvXc","authDomain":"mra-vue.firebaseapp.com","databaseURL":"https:\u002F\u002Fmra-vue.firebaseio.com","projectId":"mra-vue","storageBucket":"mra-vue.appspot.com","messagingSenderId":"606160825857","appId":"1:606160825857:web:9e51bfed7565b25b06da00"}}
 
 const simulateUserRecord = ({
   uid,

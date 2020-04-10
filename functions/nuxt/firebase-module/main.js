@@ -5,7 +5,7 @@ import firebase from 'firebase/app'
   /** --------------------------------------------------------------------------------------------- **/
 
 export default async ({ res }, inject) => {
-  const options = {"config":{"apiKey":"AIzaSyALMtZF3WopNjQ-EwaZDKbxDq5Je1fwvXc","authDomain":"mra-vue.firebaseapp.com","databaseURL":"https:\u002F\u002Fmra-vue.firebaseio.com","projectId":"mra-vue","storageBucket":"mra-vue.appspot.com","messagingSenderId":"606160825857","appId":"1:606160825857:web:9e51bfed7565b25b06da00"},"onFirebaseHosting":true,"services":{"auth":{"persistence":"local","initialize":{"onAuthStateChangedMutation":"users\u002FSET_LOGGED","onAuthStateChangedAction":"users\u002FgetUserInfo"},"ssr":{"credential":"~\u002Fassets\u002FserviceAccount.json"}},"realtimeDb":true,"functions":{"location":"us-central1","emulatorPort":5001}}}
+  const options = {"config":{"apiKey":"AIzaSyALMtZF3WopNjQ-EwaZDKbxDq5Je1fwvXc","authDomain":"mra-vue.firebaseapp.com","databaseURL":"https:\u002F\u002Fmra-vue.firebaseio.com","projectId":"mra-vue","storageBucket":"mra-vue.appspot.com","messagingSenderId":"606160825857","appId":"1:606160825857:web:9e51bfed7565b25b06da00"},"onFirebaseHosting":true,"services":{"auth":{"persistence":"local","initialize":{"onAuthStateChangedMutation":"users\u002FSET_LOGGED","onAuthStateChangedAction":"users\u002FgetUserInfo"},"ssr":{"credential":"~\u002FserviceAccount.json"}},"realtimeDb":true,"functions":{"location":"us-central1","emulatorPort":5001}}}
   const firebaseConfig = options.config
 
   // Resolve the firebase app corresponding to the server user
