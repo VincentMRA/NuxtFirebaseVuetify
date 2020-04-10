@@ -1,0 +1,1 @@
+exports.ids=[4],exports.modules={45:function(t,e,r){"use strict";r.r(e);var c={name:"",data:()=>({})},n=r(3);var component=Object(n.a)(c,(function(){var t=this.$createElement;return(this._self._c||t)("div",{attrs:{id:""}},[this._ssrNode("<h1 data-v-21240970>secret</h1>")])}),[],!1,(function(t){}),"21240970","496177c6");e.default=component.exports}};

@@ -1,0 +1,33 @@
+{
+  "name": "tiuaerhg",
+  "version": "1.0.0",
+  "description": "My epic Nuxt.js project",
+  "author": "vmechele",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "clean": "mkdir -p public && rm -rf ./public/*",
+    "cp:static": "cp -R ./functions/nuxt/dist/client/* ./public && cp -R ./functions/nuxt/dist/server/* ./public && cp -R ./functions/nuxt/dist/* ./public &&  cp -R ./src/nuxt/* ./public && cp -R ./src/static/* ./public",
+    "setup": "yarn clean && yarn cp:static",
+    "serve": "yarn setup && firebase serve --only hosting,functions",
+    "deploy": "yarn setup && firebase deploy"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.7",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/firebase": "^5.0.7",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "cookieparser": "^0.1.0",
+    "core-js": "2",
+    "firebase": "7.13.2",
+    "js-cookie": "^2.2.1",
+    "jwt-decode": "^2.2.0",
+    "nuxt": "^2.12.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
