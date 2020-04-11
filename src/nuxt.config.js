@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
 export default {
   mode: 'universal',
@@ -70,13 +71,13 @@ export default {
   */
   firebase:{
     config: {
-      apiKey: "AIzaSyALMtZF3WopNjQ-EwaZDKbxDq5Je1fwvXc",
-      authDomain: "mra-vue.firebaseapp.com",
-      databaseURL: "https://mra-vue.firebaseio.com",
-      projectId: "mra-vue",
-      storageBucket: "mra-vue.appspot.com",
-      messagingSenderId: "606160825857",
-      appId: "1:606160825857:web:9e51bfed7565b25b06da00"
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      databaseURL:process.env.DATABASE_URL,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID,
+      appId:process.env.APP_ID
     },
     onFirebaseHosting: true,
     services: {
