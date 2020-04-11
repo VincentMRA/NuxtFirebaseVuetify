@@ -82,14 +82,10 @@ export default {
       }
     }
   },
-
-
-
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-
   axios: {
   },
   /*
@@ -116,14 +112,7 @@ export default {
         ssr : {
           credential: '~/serviceAccount.json'
         }
-        // ssr: {
-        //   // !! NEVER deploy a service account file to github or to a publicly accessible folder on your server !!
-        //   credential: '~/assets/firebase/serviceAccount.json',
-        //   // Experimental Feature, use with caution.
-        //   serverLogin: {
-        //     // sessionLifetime: 60 * 60 * 1000 // one hour
-        //   }
-        // }
+
       },
       realtimeDb: true,
       functions: {
@@ -136,7 +125,7 @@ export default {
   /*
   ** Build configuration
   */
-  buildDir:'.nuxt',
+  buildDir:'../functions/nuxt',
   build: {
     /*
     ** You can extend webpack config here
