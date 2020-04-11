@@ -39,7 +39,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Router
@@ -59,6 +59,32 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+
+
+  /*
+  ** vuetify module configuration
+  ** https://github.com/nuxt-community/vuetify-module
+  */
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    theme: {
+      dark: false,
+      themes: {
+        dark: {
+          primary: "#0099ff",
+          accent: "#717171",
+          secondary: "#CC3300",
+          info: "#808080",
+          warning: "#003366",
+          error: "#FF3333",
+          success: "#00CC33"
+        }
+      }
+    }
+  },
+
+
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -108,30 +134,9 @@ export default {
   },
 
   /*
-  ** vuetify module configuration
-  ** https://github.com/nuxt-community/vuetify-module
-  */
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
-      themes: {
-        dark: {
-          primary: "#0099ff",
-          accent: "#717171",
-          secondary: "#CC3300",
-          info: "#808080",
-          warning: "#003366",
-          error: "#FF3333",
-          success: "#00CC33"
-        }
-      }
-    }
-  },
-  /*
   ** Build configuration
   */
-  buildDir:'../functions/nuxt',
+  buildDir:'.nuxt',
   build: {
     /*
     ** You can extend webpack config here

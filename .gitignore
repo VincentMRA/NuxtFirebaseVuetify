@@ -71,6 +71,8 @@ typings/
 nuxt
 functions/nuxt
 
+public
+
 # Nuxt generate
 dist
 
